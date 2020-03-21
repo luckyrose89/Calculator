@@ -4,9 +4,7 @@
 <head>
     <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/calculator.js"></script>
+    <buttonnk rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -14,33 +12,33 @@
         <h1>Calculator made with pure JS and bootstrap</h1>
     </header>
     <div id="container">
-        <p id="answer"></p>
-        <ul id="numbers">
-            <li class="digit btn btn-primary">1</li>
-            <li class="digit btn btn-primary">2</li>
-            <li class="digit btn btn-primary">3</li>
+        <div class ="calculator-screen"></div>
+        <div id="numbers">
+            <button type="button" class="digit calculator-keys" value="1">1</button>
+            <button type="button" class="digit calculator-keys" value="2">2</button>
+            <button type="button" class="digit calculator-keys" value="3">3</button>
             </br>
-            <li class="digit btn btn-primary">4</li>
-            <li class="digit btn btn-primary">5</li>
-            <li class="digit btn btn-primary">6</li>
+            <button type="button" class="digit calculator-keys" value="4">4</button>
+            <button type="button" class="digit calculator-keys" value="5">5</button>
+            <button type="button" class="digit calculator-keys" value="6">6</button>
             </br>
-            <li class="digit btn btn-primary">7</li>
-            <li class="digit btn btn-primary">8</li>
-            <li class="digit btn btn-primary">9</li>
+            <button type="button" class="digit calculator-keys" value="7">7</button>
+            <button type="button" class="digit calculator-keys" value="8">8</button>
+            <button type="button" class="digit calculator-keys" value="9">9</button>
             </br>
-            <li class="digit btn btn-primary">0</li>
-            <li class="digit btn btn-primary">+</li>
-            <li class="digit btn btn-primary">-</li>
+            <button type="button" class="digit calculator-keys" value="0">0</button>
+            <button type="button" class="operation calculator-keys" value="+">+</button>
+            <button type="button" class="operation calculator-keys" value="-">-</button>
             </br>
-            <li class="digit btn btn-primary">*</li>
-            <li class="digit btn btn-primary">.</li>
-            <li class="digit btn btn-primary">/</li>
+            <button type="button" class="operation calculator-keys" value="*">X</button>
+            <button type="button" class="decimal calculator-keys" value=".">.</button>
+            <button type="button" class="operation calculator-keys" value="/">/</button>
             </br>
-            <li class="enter btn btn-danger">=</li>
-            <li class="clear btn btn-danger">C</li>
-            <li class="delete btn btn-danger">Del</li>
-        </ul>
+            <button type="button" class="enter">=</button>
+            <button type="button" class="clear calculator-keys" value="clear">C</button>
+        </div>
     </div>
+    <script src="js/calculator.js"></script>
 </body>
 
 </html>
