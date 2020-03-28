@@ -41,6 +41,12 @@ document.addEventListener("click", function(event) {
     updateDisplay();
   }
 
+  if (target.classList.contains("negative")) {
+    togglesign();
+    updateDisplay();
+    return;
+  }
+
   inputDigit(target.value);
   updateDisplay();
   console.log(calculator);
@@ -58,6 +64,19 @@ function inputDigit(value) {
   }
 }
 
+// convert input to negative and vice versa
+function togglesign() {
+  if (calculator.displayValue == "0") return;
+  var num = parseFloat(calculator.displayValue);
+  if (num > 0) {
+    num = -Math.abs(num);
+  } else {
+    num = Math.abs(num);
+  }
+
+  calculator.displayValue = String(num);
+}
+
 // append decimal to a digit
 function inputDecimal(dot) {
   if (calculator.secondOperatorToBeAdded === true) return;
@@ -73,7 +92,6 @@ function inputOperation(val) {
 
   if (operator && calculator.secondOperatorToBeAdded) {
     calculator.operator = val;
-    console.log(calculator);
     return;
   }
 
