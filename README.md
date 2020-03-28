@@ -1,6 +1,6 @@
 # Calculator
 
-A calculator application that uses vanilla Javascript to take user input and evaluate expressions. The live version is available at this[link](https://luckyrose89.github.io/Calculator/). This calculator allows users to perform all basic operations, like addition, subtraction, multiplication & division. In addition uses can change a number to negative or positive and perform calculations with them.
+A calculator application that uses vanilla Javascript to take user input and evaluate expressions. The live version is available at this [link](https://luckyrose89.github.io/Calculator/). This calculator allows users to perform all basic operations, like addition, subtraction, multiplication & division. In addition uses can change a number to negative or positive and perform calculations with them.
 
 ## Prerequisites
 
