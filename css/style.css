@@ -29,6 +29,7 @@ body {
   border: none;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  overflow-wrap: break-word;
 }
 
 #numbers {
@@ -48,7 +49,7 @@ button {
   font-size: 1.5rem;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0 8px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 2px 0 rgba(0, 0, 0, 0.5);
   outline: none;
   transition: box-shadow 0.1s ease-in;
 }
